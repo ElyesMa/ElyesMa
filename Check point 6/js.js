@@ -61,7 +61,7 @@ function addElement (title,price) {
     newDiv.setAttribute('id','Element'+i);
 
     img = document.createElement('img');
-    img.src ="/images/Logoshopcart.jpg";
+    img.src ="Logoshopcart.jpg";
     img.setAttribute('width','35px');
     img.setAttribute('height','35px');
     newDiv.appendChild(img);
@@ -121,7 +121,7 @@ function addElement (title,price) {
     newDiv.appendChild(button);
 
     img = document.createElement('img');
-    img.src ="/images/delete.png";
+    img.src ="delete.png";
     img.setAttribute('width','20px');
     img.setAttribute('height','20px');
     img.setAttribute('id',i);     
