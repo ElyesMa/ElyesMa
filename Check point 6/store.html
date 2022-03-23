@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/js.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <title>Gomycode-Check point 6 "Store"</title>
+</head>
+
+<body>
+    <div class="itemsnumber">
+        <p id="itemsnumber" typeof="number">0</p>
+    </div>
+    
+<section class="topofpage">
+        <img id="Logo" src="/images/Logo.svg">     
+        <img id="shopcart" src="/images/Shopping cart.png" onclick="showfunction()">
+  </section>
+
+
+
+  <div id="cart" class="cart">
+        <div id="container" class="container">
+            
+        </div>      
+        <h5>Total a payer : <span id="Total">0.000</span>TND </h5>
+        <button type="button" class="btn btn-danger" width="30px" onclick="Removeall()">clear cart</button>
+        <button id ="Paybutton" type="button" class="btn btn-secondary" width="30px" onclick="PayShow()">Pay</button>
+        
+    </div>
+
+  <h1 id="title">Trouvez le cours qui vous correspond : </h1> 
+  <p id="offre">Les cours sont à partir de 350 TND seulement,<BR> l'offre se termine aujourd'hui. Suivez les sujets qu'il vous faut, enseignés par des formateurs confirmés.</p>
+
+<section class="middleofpage">
+
+    <div class="items">
+        <img src="/images/Article1.png">
+        <div class="etiquette">
+            <h1 id="itemtitle1">Introduction to Embedded Systems</h1>
+            <p>Price :<span id="itemprice1">150</span> TND/Trimestre</p> 
+            <button id="1" type="button" class="btn btn-warning" onclick="itemNB(event)">buy</button>
+            <img id="like1" src="/images/like.svg" onclick="likefunction(1)">  
+        </div>
+
+    </div>
+
+    <div class="items">
+        <img src="/images/Article2.png">
+        <div class="etiquette">
+            <h1 id="itemtitle2">Introduction aux pratiques de gestion de projets</h1>
+            <p>Price :<span id="itemprice2">199</span> TND/Trimestre</p> 
+            <button id="2" type="button" class="btn btn-warning" onclick="itemNB(event)">buy</button>
+            <img id="like2" src="/images/like.svg" onclick="likefunction(2)">  
+        </div>
+
+    </div>
+
+    <div class="items">
+        <img src="/images/Article3.png">
+        <div class="etiquette">
+            <h1 id="itemtitle3">Introduction to Business Intelligence</h1>
+            <p>Price :<span id="itemprice3">299</span> TND/Trimestre</p> 
+            <button id="3"  type="button" class="btn btn-warning" onclick="itemNB(event)">buy</button>
+            <img id="like3" src="/images/like.svg" onclick="likefunction(3)">  
+        </div>
+
+    </div>
+
+    <div class="items">
+        <img src="/images/Article4.png">
+        <div class="etiquette">
+            <h1 id="itemtitle4">Introduction to Cybersecurity</h1>
+            <p>Price :<span id="itemprice4">350</span> TND/Trimestre</p> 
+            <button id="4" type="button" class="btn btn-warning" onclick="itemNB(event)">buy</button>
+            <img id="like4" src="/images/like.svg" onclick="likefunction(4)">
+        </div>
+
+    </div>
+
+    <div class="items">
+        <img src="/images/Article5.png">
+        <div class="etiquette">
+            <h1 id="itemtitle5">How to Become a Full-stack JavaScript Developer</h1>
+            <p>Price :<span id="itemprice5">480</span> TND/Trimestre</p> 
+            <button id="5" type="button" class="btn btn-warning" onclick="itemNB(event)">buy</button>
+            <img id="like5" src="/images/like.svg" onclick="likefunction(5)">  
+        </div>
+
+    </div>
+
+    <div class="items">
+        <img src="/images/Article6.png">
+        <div class="etiquette">
+            <h1 id="itemtitle6">The DevOps Bootcamp</h1>
+            <p>Price :<span id="itemprice6">295</span> TND/Trimestre</p> 
+            <button id="6" type="button" class="btn btn-warning" onclick="itemNB(event)">buy</button>
+            <img id="like6" src="/images/like.svg" onclick="likefunction(6)">  
+        </div>
+
+    </div>
+
+    <div class="items">
+        <img src="/images/Article7.png">
+        <div class="etiquette">
+            <h1 id="itemtitle7">The Digital Marketing Bootcamp</h1>
+            <p>Price :<span id="itemprice7">210</span> TND/Trimestre</p> 
+            <button id="7" type="button" class="btn btn-warning" onclick="itemNB(event)">buy</button>
+            <img id="like7" src="/images/like.svg" onclick="likefunction(7)">  
+        </div>
+
+    </div>
+
+    <div class="items">
+        <img src="/images/Article8.png">
+        <div class="etiquette">
+            <h1 id="itemtitle8">Scratch and App Inventor (FR)</h1>
+            <p>Price :<span id="itemprice8">650</span> TND/Trimestre</p> 
+            <button id="8" type="button" class="btn btn-warning" onclick="itemNB(event)">buy</button>
+            <img id="like8" src="/images/like.svg" onclick="likefunction(8)">  
+        </div>
+
+    </div>
+
+
+
+
+</section>
+
+<section id="payment" class="paymentwindow">
+    <form class="PayForm" name="PayForm">
+        <label>Name:</label>
+        <input type="text" name="Name"/>
+        <label>Family Name:</label>
+        <input type="text" name="FamilyName"/>
+        <label>Adress:</label>
+        <input type="text" name="Adress"/>
+        <label>Phone number:</label>
+        <input type="text" name="PhoneNumber"/>
+        <label type="submit">E-mail:</label>
+        <input type="text" name="Email" placeholder="example@example.com" />
+
+    </form>
+        <button onclick="validateForm()">Validate</button>
+        <button onclick="PayHide()">cancel</button>
+</section>
+
+
+</body>
+
+<footer>
+    <br><br><br><br><br>
+</footer>
+</html>
