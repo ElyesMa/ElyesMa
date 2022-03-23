@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+}
+
+.topofpage{
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+}
+.topofpage IMG{
+margin-left: 3vw;
+margin-right: 3vw;
+}
+#title{
+    font-size: 2vw;
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 1000;
+    color: black;
+    margin-left: 7.5vw;
+    margin-top: 1vw;
+
+}
+
+#offre{
+    font-size: 1.2vw;
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    color: black;
+    margin-left: 7.5vw;
+
+}
+
+
+.middleofpage{
+    margin-top: 8vw;
+    display: flex;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+
+}
+
+.items{
+    margin-top: 2vw;
+    width: 20vw;
+    height: 15.5vw;
+    display: flex;
+    flex-direction: column; 
+    background-color: whitesmoke;
+    position: relative;
+
+}
+
+.etiquette{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1.5vw);
+    }
+    
+.etiquette img{
+    grid-column: 3;
+    grid-row: 2; 
+    margin-left: 3vw;
+    margin-top: 0.6vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    filter: grayscale(100%);
+    cursor: pointer;
+ }
+
+ .likeimg{
+     filter: grayscale(0%);
+     width: 1.5vw;
+
+ }
+
+
+ .etiquette img:hover {
+    filter: grayscale(0%);
+  }
+
+.items h1{
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    grid-column: 1 / 10;
+    grid-row: 1;
+}
+
+.items p{
+    margin-top: 1.3vw;
+    margin-left: 0.5vw;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    grid-column: 1 / 10;
+    grid-row: 2;
+}
+
+.items button{
+    font-size: 1vw;
+    font-weight: 750;
+    text-align: center;
+    font-family: "Roboto",Arial,sans-serif; 
+    width: 5vw;
+    height: 2vw;
+    grid-column: 4;
+    grid-row: 2;
+    margin-top: 0.3vw;
+    margin-right: 0.5vw;
+ 
+}
+
+
+
+.items:hover{
+box-shadow: 1vw 1vw 1vw 0.1vw rgba(0, 0, 255, .2);
+}
+
+
+
+#shopcart{
+    width: 8vw;
+    height: 8vw;
+    transition: 1s;
+}
+
+#shopcart:hover{
+    transform: rotate(360deg);
+}
+
+
+#Logo{
+    width: 28vw;
+    height: 8vw;
+    transition: 1s;
+}
+#Logo:hover{
+    margin-left: 8vw;
+}
+
+.items:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}           
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.cart {
+  position: absolute;
+  height: 50rem;
+  top: 8vw;
+  right: 4vw;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  width: 0vw;
+  overflow: hidden;
+}
+
+
+#container{
+  height: 12vw;
+  width: 36.8vw;
+  margin-left: 0;
+  overflow: scroll;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+#container div{
+ display: flex;
+ align-items: center;
+
+}
+
+#container button{
+  height: 1.2vw;
+  width: 1.6vw;
+  line-height: 0;
+}
+button{
+  width: 6.4vw;
+  line-height: 0;
+}
+
+.containeritems{
+font-size: 1.12vw;
+
+}
+titre{
+  width: 16vw;
+  height: 1.6vw;
+  overflow: hidden;
+
+}
+prix{
+  width: 2.4vw;
+  color: red;
+  text-align: center;
+}
+Qté{
+  width: 1.6vw;
+  text-align: center;
+}
+
+.btn-success{
+  filter:greyscale(100%);
+
+}
+
+.show-cart {
+  width: 37.2vw;
+  padding: 0vw 0vw;
+  transform: rotateY(-360deg);
+}
+
+  .itemsnumber{
+    right: 11vw;
+    top: 0.4vw;
+    height: 2.4vw;
+    color: transparent;
+    font-size: 1.2vw;
+    font-weight: 600;
+    position: absolute;
+    border-radius: 50%;
+    min-width: 2.4vw;
+  }
+
+  #itemsnumber{
+    padding: 0.24vw 0.4vw;
+    text-align: CENTER;
+  }
+
+  .paymentwindow{
+    display: none;
+    margin-top: 8vw;
+    margin-left: 24vw;
+    margin-right: auto;
+    width: 32vw;
+    align-items: center;
+    background-color: rgb(227, 235, 238);
+    position: absolute;
+    top:8vw;
+    left:16vw;
+    border: 0.01vw;
+    border-color: black;
+    border-style:solid;
+    border-radius: 0.8vw; 
+  }
+
+  .paymentwindow button{
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+    height: 2.4vw;
+    margin-left: 1.6vw;
+  }
+
+  .PayForm{
+    margin-left: 1.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
