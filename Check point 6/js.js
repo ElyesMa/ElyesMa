@@ -56,7 +56,7 @@ function addElement (title,price) {
     newDiv.setAttribute('id','Element'+i);
 
     img = document.createElement('img');
-    img.src ="Logoshopcart.jpg";
+    img.src ="/images/Logoshopcart.jpg";
     img.setAttribute('width','35px');
     img.setAttribute('height','35px');
     newDiv.appendChild(img);
@@ -116,7 +116,7 @@ function addElement (title,price) {
     newDiv.appendChild(button);
 
     img = document.createElement('img');
-    img.src ="delete.png";
+    img.src ="/images/delete.png";
     img.setAttribute('width','20px');
     img.setAttribute('height','20px');
     img.setAttribute('id',i);     
@@ -186,8 +186,8 @@ document.getElementById("Total").innerHTML=somme;
 //ajouter ou soustraire Qté de l'article a acheter
 function ChangQte(event){
     var i = Math.abs(event.target.id);
-    if(parseInt(document.getElementById('Qté'+i).innerHTML)+parseInt(event.target.id)>=1){
-    document.getElementById("Qté"+i).innerHTML=parseInt(document.getElementById('Qté'+i).innerHTML)+parseInt(event.target.id);
+    if(parseInt(document.getElementById('Qté'+i).innerHTML)+parseInt(event.target.id)/Math.abs(parseInt(event.target.id))>=1){
+    document.getElementById("Qté"+i).innerHTML=parseInt(document.getElementById('Qté'+i).innerHTML)+parseInt(event.target.id)/Math.abs(parseInt(event.target.id));
     Total()
     }
     }
