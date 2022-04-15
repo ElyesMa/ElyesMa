@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/About.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/About.js"></script>
+     <title>Gomycode-Project</title>
+</head> 
+
+<body>
+
+<nav id="nav" class="navbar navbar-inverse">
+    <div class="container-fluid">
+       <div class="navbar-header">
+        <img src="/Images/About/logo.png" width="120px" height="50px">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+
+      </div>
+      <a class="navbar-brand" href="#"> Sté MANI DEUTSCH PIECES </a>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/Menu.html">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About US <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/Shop.html">Shop</a></li>
+              <li><a href="/Station.html">Station</a></li>
+              <li><a href="/Contacts.html">Contacts</a></li>
+            </ul>
+          </li>
+        </ul>
+    
+      </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="row align-items-center">
+      <div class="col-sm-12">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary active" id="option1" onclick="ChangeSrc(this.id)">SHOP</button>
+            <button type="button" class="btn btn-primary"id="option2" onclick="ChangeSrc(this.id)">Service Station</button>
+          </div>
+      </div>
+   
+      <div class="col-sm-12">
+            <video id ="Video" source src="/Media/MDP.mp4"  type="video/mp4" controls autoplay onloadstart="this.volume=0.2" ></video>
+           <p> Notre entreprise vous propose  des pièces détachées neuves et des produits (tels que l'huile moteur, liquide de frein, liquide de refroidissement et du lave glace) pour entretenir votre véhicule.
+            Entretenir son véhicule ou sa machine passe parfois par le remplacement de certaines pièces. Pour vous faciliter cette démarche, Notre équipe vous propose la vente de pièces détachées en tout genre. Parmi elles : radiateurs d’eau, condenseurs, disques de freins, embrayages, échangeur air et filtration etc. Nous mettons aussi à disposition des produits d’entretien en tout genre.
+            <br>
+            Fondée à l’origine pour la vente des pièces détachées, notre entreprise met tout en œuvre pour les propriétaires de véhicules pour particuliers ou professionnels. Votre voiture nécessite le remplacement d’une pièce ? Nous mettons en vente des pièces détachées quasi neuves pour nous adapter à tous les budgets. Quel que soit votre choix, sachez que la qualité n’en sera pas réduite pour autant. N’attendez plus pour découvrir notre service de vente de pièces détachées.
+            <br>
+            
+            Pour vous éviter la panne, notre entreprise vous propose, non seulement la vente de pièces détachées, mais également la réparation de votre véhicule.
+            Pour l’entretien de votre véhicule, la vente de pièces détachées ne suffit pas. Vous pourriez avoir besoin d’aide ou de conseils pour les remplacer. Notre garage pourra vous conseiller ou procéder à la réparation de votre voiture. 
+            Nous possédons un savoir-faire acquis depuis 15 ans et nous sommes spécialisés dans les voitures marques BMW & Mercedes. Prenez un rendez-vous avec notre équipe pour toute demande d’information ou de réparation.
+            </p>
+        
+      </div>
+    </div>
+  </div>
+<!--
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary active" id="option1" onclick="ChangeSrc(this.id)">SHOP</button>
+    <button type="button" class="btn btn-primary"id="option2" onclick="ChangeSrc(this.id)">Service Station</button>
+  </div>
+
+<video id ="Video" source src="/Media/MDP.mp4"  type="video/mp4" controls autoplay></video>
+
+<p>Notre entreprise vous propose  des pièces détachées neuves et des produits (tels que l'huile moteur, liquide de frein, liquide de refroidissement et du lave glace) pour entretenir votre véhicule.
+    Entretenir son véhicule ou sa machine passe parfois par le remplacement de certaines pièces. Pour vous faciliter cette démarche, Notre équipe vous propose la vente de pièces détachées en tout genre. Parmi elles : radiateurs d’eau, condenseurs, disques de freins, embrayages, échangeur air et filtration etc. Nous mettons aussi à disposition des produits d’entretien en tout genre.
+    <br>
+    Fondée à l’origine pour la vente des pièces détachées, notre entreprise met tout en œuvre pour les propriétaires de véhicules pour particuliers ou professionnels. Votre voiture nécessite le remplacement d’une pièce ? Nous mettons en vente des pièces détachées quasi neuves pour nous adapter à tous les budgets. Quel que soit votre choix, sachez que la qualité n’en sera pas réduite pour autant. N’attendez plus pour découvrir notre service de vente de pièces détachées.
+    <br>
+    
+    Pour vous éviter la panne, notre entreprise vous propose, non seulement la vente de pièces détachées, mais également la réparation de votre véhicule.
+    Pour l’entretien de votre véhicule, la vente de pièces détachées ne suffit pas. Vous pourriez avoir besoin d’aide ou de conseils pour les remplacer. Notre garage pourra vous conseiller ou procéder à la réparation de votre voiture. 
+    Nous possédons un savoir-faire acquis depuis 15 ans et nous sommes spécialisés dans les voitures marques BMW & Mercedes. Prenez un rendez-vous avec notre équipe pour toute demande d’information ou de réparation.
+    </p>
+
+-->
+
+
+
+</body>
+</html>
