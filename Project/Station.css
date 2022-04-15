@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    position: fixed;
+    width: 2000px;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: orange;
+  }
+
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+.wrapper {
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.fixed {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  color: #eeeeee;
+  text-align: center;
+  display: table;
+}
+.fixed h3 {
+  display: table-cell;
+  vertical-align: middle;
+}
+.scroll {
+  background-color: grey;
+  padding: 10px 70px;
+  color: white;
+}
+.one {
+  background-image: url("/Images/Station/BI.jpg");
+}
+.two {
+  background-image: url("/Images/Station/BI2.jpg");
+}
+.three {
+  background-image: url("/Images/Station/BI3.jpg");
+}
+.for {
+    background-image: url("/Images/Station/BI4.jpg");
+}
+.five {
+    background-image: url("/Images/Station/BI5.jpg");
+}
+    
+
+.container{
+    margin-top: 50px;
+    background-color: white;
+    height: 850px;
+}
+
+#logo{
+    width: 25vw;
+    height: 24vw;
+    position: absolute;
+    top: 2vw;
+    left: 25vw;
+}
+
+#logoTop:hover{
+    margin-left: 8vw;
+}
+
+.ContactForm{
+    position: relative;
+    padding: 10PX 10PX;
+    border: 0.01vw;
+    border-color: black;
+    border-style:solid;
+    border-radius: 0.8vw; 
+    margin-left: 1.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 10px;
+  }
+
+.ContactForm .button{
+
+    margin-top: 0.8vw;
+    height: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+  }
+
+
+#Welcome{
+    position: absolute;
+    width: 10vw;
+    top: 5vw;
+    left: 37vw;
+    font-weight: 1000;
+}

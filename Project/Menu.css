@@ -1,0 +1,136 @@
+* {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.menu{
+    margin-top: 10px;
+    width: 1400px;
+    height: 1100px;
+    background-image: url("/Images/Menu/BI.png");
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#logo{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: 200px;
+    left: 700p;
+}
+
+#basket{
+    width: 230px;
+    height: 180px;
+    position: relative;
+    top: 0px;
+    left: 600px;
+}
+
+
+.bubble{   
+    display: flex;
+    flex-direction: column;
+    background-image: url("/Images/Menu/bubble.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+    transition: 2s;
+    position: absolute;
+    
+ 
+   
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.bubble-Move{   
+    transition: 0s;
+}
+
+.bubble-fix{   
+    transition: 2s;
+}
+
+
+#Lien1{
+    top: 250px;
+    left: 1000px;
+    position: absolute;
+  
+
+}
+
+#Lien2{
+    top: 500px;
+    left: 380px;
+    position: absolute;
+   
+}
+
+#Lien3{
+    top: 450px;
+    left: 150px;
+    position: absolute;
+   
+}
+
+#Lien4{
+    top: 400px;
+    left: 700px;
+    position: absolute;
+    
+  
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+.bubble:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+    
+  
+  }
+
+ .menu h1{
+    color: red;
+    margin-top: 550px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+  }
